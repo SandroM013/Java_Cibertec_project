@@ -20,6 +20,10 @@ import javax.swing.JButton;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import java.awt.TextArea;
 
 public class Empleados extends JFrame {
 
@@ -33,6 +37,7 @@ public class Empleados extends JFrame {
 	private JButton btnGrabar;
 	private JTextField txtContrato;
 	private JComboBox cmbCargo;
+	private TextArea txtR;
 	private Empleado objEmp;
 	ArregloEmpleado aEmpleados = new ArregloEmpleado();
 	/**
@@ -59,7 +64,37 @@ public class Empleados extends JFrame {
 	public Empleados() {
 		setTitle("Registro de Empleados");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 768, 479);
+		setBounds(100, 100, 768, 734);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu mnOpciones = new JMenu("Opciones");
+		menuBar.add(mnOpciones);
+		
+		JMenuItem mntmGrabarl = new JMenuItem("GrabarL");
+		mntmGrabarl.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Empleado ep = aEmpleados.buscarEmp(getID());
+				
+				if(ep != null) {
+					ep = new Empleado(getID(), getApelldios(), getNombres(), getCargo(), getContrato(), getSueldo() );
+					aEmpleados.adicionar(ep);
+					aEmpleados.grabar();
+					listar();
+				}
+				limpiarEspacios();
+			}
+		});
+		mnOpciones.add(mntmGrabarl);
+		
+		JMenuItem mntmCargar = new JMenuItem("Cargar");
+		mntmCargar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				aEmpleados.cargar();
+			}
+		});
+		mnOpciones.add(mntmCargar);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -73,6 +108,96 @@ public class Empleados extends JFrame {
 		tblEmpleados = new JTable();
 		tblEmpleados.setModel(new DefaultTableModel(
 			new Object[][] {
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
@@ -140,7 +265,7 @@ public class Empleados extends JFrame {
 		contentPane.add(txtContrato);
 		
 		cmbCargo = new JComboBox();
-		cmbCargo.setModel(new DefaultComboBoxModel(new String[] {"Tesista", "Investigador", "Prácticante"}));
+		cmbCargo.setModel(new DefaultComboBoxModel(new String[] {"", "Tesista", "Investigador", "Prácticante"}));
 		cmbCargo.setBounds(375, 24, 114, 26);
 		contentPane.add(cmbCargo);
 		
@@ -263,6 +388,26 @@ public class Empleados extends JFrame {
 		});
 		btnListar.setBounds(609, 129, 105, 27);
 		contentPane.add(btnListar);
+		
+		txtR = new TextArea();
+		txtR.setBounds(35, 435, 572, 213);
+		contentPane.add(txtR);
+		
+		JButton btnResultado = new JButton("Resultado");
+		btnResultado.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtR.setText("El pago total para los trabajadores es de: "+aEmpleados.SueldoTotal()+"\n");
+				txtR.append("\n");
+				txtR.append("El total de Tesistas son: "+aEmpleados.countTesistas()+"\n");
+				txtR.append("\n");
+				txtR.append("El total de Prácticantes son: "+aEmpleados.countPracticante()+"\n");
+				txtR.append("\n");
+				txtR.append("El total de Investigadores son: "+aEmpleados.countInvestigador()+"\n");
+			}
+		});
+		btnResultado.setBounds(621, 445, 105, 27);
+		contentPane.add(btnResultado);
+		
 	}
 	
 	int getID() {
@@ -289,7 +434,7 @@ public class Empleados extends JFrame {
 		return Double.parseDouble(txtSueldo.getText());
 	}
 	
-	void limpiaTabla() {
+	private void limpiaTabla() {
 		for(int i=0;i<6;i++) {
 			tblEmpleados.setValueAt("", i, 0);
 			tblEmpleados.setValueAt("", i, 1);
@@ -300,7 +445,7 @@ public class Empleados extends JFrame {
 		}
 	}
 	
-	void listar() {
+	private void listar() {
 		limpiaTabla();
 		for(int i = 0;i<aEmpleados.getLength();i++) {
 			tblEmpleados.setValueAt(aEmpleados.devolver(i).getId(), i, 0);
@@ -310,5 +455,14 @@ public class Empleados extends JFrame {
 			tblEmpleados.setValueAt(aEmpleados.devolver(i).getContrato(), i, 4);
 			tblEmpleados.setValueAt(aEmpleados.devolver(i).getSueldo(), i, 5);
 		}
+	}
+	
+	private void limpiarEspacios() {
+		txtIDE.setText("");
+		txtApellidos.setText("");
+		txtNombres.setText("");
+		txtContrato.setText("");
+		txtSueldo.setText("");
+		cmbCargo.setSelectedItem("");
 	}
 }

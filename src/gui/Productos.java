@@ -18,10 +18,15 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
 import pClases.ArregloProductos;
+import pClases.Empleado;
 import pClases.Producto;
 import pClases.Servicio;
 
 import java.time.*;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import java.awt.TextArea;
 
 public class Productos extends JFrame {
 
@@ -61,7 +66,37 @@ public class Productos extends JFrame {
 	public Productos() {
 		setTitle("Registro de Productos");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 768, 479);
+		setBounds(100, 100, 768, 734);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu mnOpciones = new JMenu("Opciones");
+		menuBar.add(mnOpciones);
+		
+		JMenuItem mntmGrabar = new JMenuItem("Grabar");
+		mntmGrabar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Producto pd = aProductos.buscarProduct(getID());
+				
+				if(pd != null) {
+					pd = new Producto(getID(), getProducto(), getProveedor(), getFecha(), getStock(), getCosto());
+					aProductos.adicionar(pd);
+					aProductos.grabar();
+					listar();
+				}
+				limpiarEspacios();
+			}
+		});
+		mnOpciones.add(mntmGrabar);
+		
+		JMenuItem mntmCargar = new JMenuItem("Cargar");
+		mntmCargar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				aProductos.cargar();
+			}
+		});
+		mnOpciones.add(mntmCargar);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -76,6 +111,96 @@ public class Productos extends JFrame {
 		scrollPane.setViewportView(tblProducto);
 		tblProducto.setModel(new DefaultTableModel(
 			new Object[][] {
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
@@ -269,6 +394,25 @@ public class Productos extends JFrame {
 		});
 		btnGrabar.setBounds(609, 90, 105, 27);
 		contentPane.add(btnGrabar);
+		
+		TextArea txtA = new TextArea();
+		txtA.setBounds(35, 434, 563, 217);
+		contentPane.add(txtA);
+		
+		JButton btnResultados = new JButton("Resultados");
+		btnResultados.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtA.setText("El pago efectuado total es de: "+aProductos.CostoTotal()+ "soles"+"\n");
+				txtA.append("\n");
+				txtA.append("La cantidad de Glicerol adquirido es: "+aProductos.countGlicerol()+"\n");
+				txtA.append("\n");
+				txtA.append("La cantidad de Polimerasa adquirido es: "+aProductos.countPolyTaq()+"\n");
+				txtA.append("\n");
+				txtA.append("La cantidad de Primers adquiridos es: "+aProductos.countPrimers()+"\n");
+			}
+		});
+		btnResultados.setBounds(609, 434, 105, 27);
+		contentPane.add(btnResultados);
 	}
 	
 	int getID() {
@@ -316,5 +460,14 @@ public class Productos extends JFrame {
 			tblProducto.setValueAt(aProductos.devolver(i).getStock(), i, 4);
 			tblProducto.setValueAt(aProductos.devolver(i).getCosto(), i, 5);
 		}
+	}
+	
+	private void limpiarEspacios() {
+		txtIDP.setText("");
+		txtProducto.setText("");
+		txtProveedor.setText("");
+		txtFecha.setText("");
+		txtStock.setText("");
+		txtCosto.setText("");
 	}
 }

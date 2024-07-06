@@ -17,10 +17,15 @@ import javax.swing.table.DefaultTableModel;
 
 import pClases.ArregloServicio;
 import pClases.Empleado;
+import pClases.Producto;
 import pClases.Servicio;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.time.LocalDate;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import java.awt.TextArea;
 
 public class Servicios extends JFrame {
 
@@ -60,7 +65,37 @@ public class Servicios extends JFrame {
 	public Servicios() {
 		setTitle("Registro de Servicios");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 768, 479);
+		setBounds(100, 100, 768, 734);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu mnOpciones = new JMenu("Opciones");
+		menuBar.add(mnOpciones);
+		
+		JMenuItem mntmGrabar = new JMenuItem("Grabar");
+		mntmGrabar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Servicio sr = aServicio.buscarServicio(getID());
+				
+				if(sr != null) {
+					sr = new Servicio(getID(), getEncargado(), getCliente(), getServicio(), getDate(), getCosto());
+					aServicio.adicionar(sr);
+					aServicio.grabar();
+					listar();
+				}
+				limpiarEspacios();
+			}
+		});
+		mnOpciones.add(mntmGrabar);
+		
+		JMenuItem mntmCargar = new JMenuItem("Cargar");
+		mntmCargar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				aServicio.cargar();
+			}
+		});
+		mnOpciones.add(mntmCargar);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -74,6 +109,96 @@ public class Servicios extends JFrame {
 		tblServicios = new JTable();
 		tblServicios.setModel(new DefaultTableModel(
 			new Object[][] {
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
+				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
 				{null, null, null, null, null, null},
@@ -266,6 +391,25 @@ public class Servicios extends JFrame {
 		});
 		btnListar.setBounds(609, 168, 105, 27);
 		contentPane.add(btnListar);
+		
+		TextArea txtA = new TextArea();
+		txtA.setBounds(35, 425, 563, 217);
+		contentPane.add(txtA);
+		
+		JButton btnResultados = new JButton("Resultados");
+		btnResultados.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtA.setText("El pago recibido total es de: "+aServicio.VentaTotal()+ "soles"+"\n");
+				txtA.append("\n");
+				txtA.append("El total de servicio para PCR 16S son: "+aServicio.count16S()+"\n");
+				txtA.append("\n");
+				txtA.append("El total de Extracciones de ADN son: "+aServicio.countExtraccion()+"\n");
+				txtA.append("\n");
+				txtA.append("El total de Conteos de Colonias son: "+aServicio.countCFU()+"\n");
+			}
+		});
+		btnResultados.setBounds(609, 425, 105, 27);
+		contentPane.add(btnResultados);
 	}
 	
 	int getID() {
@@ -314,4 +458,13 @@ public class Servicios extends JFrame {
 			tblServicios.setValueAt(aServicio.devolver(i).getCosto(), i, 5);
 		}
 	}
+	private void limpiarEspacios() {
+		txtIDS.setText("");
+		txtEncargado.setText("");
+		txtCliente.setText("");
+		txtFecha.setText("");
+		cmbServicio.setSelectedItem("");
+		txtCosto.setText("");
+	}
+	
 }

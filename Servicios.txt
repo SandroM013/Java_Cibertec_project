@@ -1,0 +1,70 @@
+1,Godoy,AgroCorp,Extracción de ADN,2024-07-06,1500
+2,Salazar,CIP,Conteo CFU,2024-07-06,1700
+3,Cisneros,CIP,Conteo CFU,2024-07-06,1500
+4,Salazar,BioTechROE,PCR 16S,2024-07-06,1700
+5,Godoy,BioTechROE,PCR 16S,2024-07-06,1700
+6,Salazar,BioTechROE,PCR 16S,2024-07-06,1500
+7,Martel,AgroCorp,Extracción de ADN,2024-07-06,1500
+8,Martel,CIP,Conteo CFU,2024-07-06,200
+9,Godoy,BioTechROE,PCR 16S,2024-07-06,1700
+10,Martel,AgroCorp,PCR 16S,2024-07-06,1700
+11,Martel,AgroCorp,PCR 16S,2024-07-06,200
+12,Salazar,BioTechROE,Extracción de ADN,2024-07-06,1700
+13,Cisneros,CIP,Conteo CFU,2024-07-06,1700
+14,Martel,CIP,Conteo CFU,2024-07-06,1500
+15,Salazar,CIP,Conteo CFU,2024-07-06,1700
+16,Cisneros,CIP,PCR 16S,2024-07-06,200
+17,Martel,CIP,Conteo CFU,2024-07-06,200
+18,Cisneros,AgroCorp,PCR 16S,2024-07-06,200
+19,Cisneros,CIP,PCR 16S,2024-07-06,200
+20,Godoy,AgroCorp,PCR 16S,2024-07-06,200
+21,Cisneros,BioTechROE,PCR 16S,2024-07-06,1700
+22,Cisneros,BioTechROE,PCR 16S,2024-07-06,200
+23,Salazar,AgroCorp,Extracción de ADN,2024-07-06,200
+24,Martel,AgroCorp,PCR 16S,2024-07-06,200
+25,Martel,BioTechROE,Conteo CFU,2024-07-06,1700
+26,Godoy,AgroCorp,Conteo CFU,2024-07-06,1500
+27,Cisneros,BioTechROE,PCR 16S,2024-07-06,1700
+28,Godoy,BioTechROE,Conteo CFU,2024-07-06,1500
+29,Salazar,CIP,Conteo CFU,2024-07-06,200
+30,Godoy,BioTechROE,PCR 16S,2024-07-06,200
+31,Cisneros,CIP,PCR 16S,2024-07-06,1700
+32,Salazar,BioTechROE,PCR 16S,2024-07-06,200
+33,Salazar,CIP,PCR 16S,2024-07-06,1700
+34,Martel,AgroCorp,Extracción de ADN,2024-07-06,200
+35,Salazar,BioTechROE,PCR 16S,2024-07-06,1700
+36,Salazar,AgroCorp,Conteo CFU,2024-07-06,200
+37,Godoy,CIP,Extracción de ADN,2024-07-06,1700
+38,Salazar,AgroCorp,Conteo CFU,2024-07-06,1500
+39,Godoy,AgroCorp,Extracción de ADN,2024-07-06,200
+40,Salazar,AgroCorp,PCR 16S,2024-07-06,200
+41,Godoy,AgroCorp,PCR 16S,2024-07-06,1700
+42,Salazar,AgroCorp,Conteo CFU,2024-07-06,1500
+43,Martel,BioTechROE,PCR 16S,2024-07-06,1700
+44,Salazar,AgroCorp,Conteo CFU,2024-07-06,1700
+45,Cisneros,AgroCorp,PCR 16S,2024-07-06,200
+46,Godoy,CIP,Conteo CFU,2024-07-06,1500
+47,Cisneros,BioTechROE,PCR 16S,2024-07-06,200
+48,Cisneros,BioTechROE,Conteo CFU,2024-07-06,1700
+49,Cisneros,CIP,PCR 16S,2024-07-06,1700
+50,Salazar,AgroCorp,Conteo CFU,2024-07-06,1500
+51,Martel,CIP,PCR 16S,2024-07-06,200
+52,Cisneros,BioTechROE,PCR 16S,2024-07-06,1700
+53,Salazar,BioTechROE,Extracción de ADN,2024-07-06,200
+54,Godoy,AgroCorp,PCR 16S,2024-07-06,1500
+55,Martel,AgroCorp,Extracción de ADN,2024-07-06,200
+56,Salazar,AgroCorp,Conteo CFU,2024-07-06,200
+57,Martel,CIP,Conteo CFU,2024-07-06,200
+58,Cisneros,AgroCorp,Extracción de ADN,2024-07-06,1500
+59,Martel,AgroCorp,Extracción de ADN,2024-07-06,200
+60,Godoy,CIP,Conteo CFU,2024-07-06,1700
+61,Martel,AgroCorp,Conteo CFU,2024-07-06,1500
+62,Godoy,CIP,Conteo CFU,2024-07-06,200
+63,Martel,BioTechROE,PCR 16S,2024-07-06,1500
+64,Salazar,BioTechROE,Conteo CFU,2024-07-06,1500
+65,Cisneros,AgroCorp,PCR 16S,2024-07-06,1500
+66,Godoy,AgroCorp,Extracción de ADN,2024-07-06,200
+67,Martel,AgroCorp,Conteo CFU,2024-07-06,1700
+68,Salazar,CIP,PCR 16S,2024-07-06,1700
+69,Salazar,CIP,PCR 16S,2024-07-06,200
+70,Martel,CIP,Conteo CFU,2024-07-06,200

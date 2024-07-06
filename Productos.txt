@@ -1,0 +1,70 @@
+1,PolyTaq,AgroCorp,2024-07-06,2,500
+2,Primers 16S,ThermoFisher,2024-07-06,5,500
+3,PolyTaq,NanoScy,2024-07-06,5,1200
+4,Glicerol,ThermoFisher,2024-07-06,10,1200
+5,Glicerol,ThermoFisher,2024-07-06,2,1200
+6,PolyTaq,AgroCorp,2024-07-06,2,700
+7,Glicerol,AgroCorp,2024-07-06,5,500
+8,Glicerol,NanoScy,2024-07-06,10,700
+9,Glicerol,AgroCorp,2024-07-06,2,700
+10,PolyTaq,AgroCorp,2024-07-06,10,500
+11,Glicerol,AgroCorp,2024-07-06,2,500
+12,Glicerol,ThermoFisher,2024-07-06,10,1200
+13,Glicerol,AgroCorp,2024-07-06,5,700
+14,PolyTaq,NanoScy,2024-07-06,10,700
+15,PolyTaq,ThermoFisher,2024-07-06,10,1200
+16,PolyTaq,NanoScy,2024-07-06,5,500
+17,Primers 16S,AgroCorp,2024-07-06,10,700
+18,Glicerol,ThermoFisher,2024-07-06,2,700
+19,Primers 16S,AgroCorp,2024-07-06,10,1200
+20,Primers 16S,AgroCorp,2024-07-06,5,1200
+21,Primers 16S,NanoScy,2024-07-06,5,1200
+22,Glicerol,ThermoFisher,2024-07-06,10,500
+23,Primers 16S,ThermoFisher,2024-07-06,5,500
+24,Primers 16S,NanoScy,2024-07-06,2,700
+25,PolyTaq,ThermoFisher,2024-07-06,5,500
+26,PolyTaq,AgroCorp,2024-07-06,5,500
+27,Primers 16S,AgroCorp,2024-07-06,5,500
+28,Glicerol,AgroCorp,2024-07-06,10,500
+29,Primers 16S,AgroCorp,2024-07-06,5,500
+30,Glicerol,AgroCorp,2024-07-06,5,500
+31,PolyTaq,NanoScy,2024-07-06,2,700
+32,Primers 16S,AgroCorp,2024-07-06,10,1200
+33,PolyTaq,AgroCorp,2024-07-06,2,1200
+34,PolyTaq,AgroCorp,2024-07-06,10,700
+35,Glicerol,AgroCorp,2024-07-06,2,1200
+36,PolyTaq,ThermoFisher,2024-07-06,2,500
+37,Primers 16S,AgroCorp,2024-07-06,10,700
+38,PolyTaq,NanoScy,2024-07-06,10,500
+39,PolyTaq,NanoScy,2024-07-06,2,1200
+40,Glicerol,NanoScy,2024-07-06,5,1200
+41,Glicerol,ThermoFisher,2024-07-06,2,700
+42,Glicerol,AgroCorp,2024-07-06,5,500
+43,Glicerol,NanoScy,2024-07-06,10,700
+44,Primers 16S,NanoScy,2024-07-06,2,1200
+45,Glicerol,NanoScy,2024-07-06,10,1200
+46,Primers 16S,ThermoFisher,2024-07-06,10,1200
+47,Primers 16S,NanoScy,2024-07-06,10,500
+48,Glicerol,ThermoFisher,2024-07-06,2,500
+49,Glicerol,AgroCorp,2024-07-06,10,700
+50,Glicerol,NanoScy,2024-07-06,2,700
+51,Glicerol,AgroCorp,2024-07-06,2,1200
+52,Primers 16S,NanoScy,2024-07-06,5,1200
+53,Glicerol,NanoScy,2024-07-06,2,1200
+54,Glicerol,NanoScy,2024-07-06,5,700
+55,PolyTaq,ThermoFisher,2024-07-06,2,1200
+56,Glicerol,AgroCorp,2024-07-06,10,700
+57,Glicerol,AgroCorp,2024-07-06,5,700
+58,PolyTaq,AgroCorp,2024-07-06,2,700
+59,Glicerol,AgroCorp,2024-07-06,2,700
+60,PolyTaq,AgroCorp,2024-07-06,5,700
+61,Primers 16S,NanoScy,2024-07-06,10,1200
+62,PolyTaq,ThermoFisher,2024-07-06,5,1200
+63,Primers 16S,AgroCorp,2024-07-06,5,1200
+64,PolyTaq,NanoScy,2024-07-06,10,700
+65,Glicerol,ThermoFisher,2024-07-06,10,1200
+66,Glicerol,AgroCorp,2024-07-06,10,1200
+67,Glicerol,AgroCorp,2024-07-06,10,500
+68,Glicerol,ThermoFisher,2024-07-06,2,700
+69,PolyTaq,AgroCorp,2024-07-06,10,500
+70,Primers 16S,AgroCorp,2024-07-06,2,1200
