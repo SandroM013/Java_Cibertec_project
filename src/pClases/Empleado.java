@@ -1,12 +1,12 @@
 package pClases;
 
 public class Empleado {
-	int id;
-	String Apellidos;
-	String Nombres;
-	String Cargo;
-	String Contrato;
-	double Sueldo;
+	public int id;
+	public String Apellidos;
+	public String Nombres;
+	public String Cargo;
+	public String Contrato;
+	public double Sueldo;
 	
 	public Empleado(int id, String apellidos, String nombres, String cargo, String contrato, double sueldo) {
 		super();

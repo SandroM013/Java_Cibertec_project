@@ -440,7 +440,7 @@ public class Productos extends JFrame {
 	}
 	
 	void limpiaTabla() {
-		for(int i=0;i<6;i++) {
+		for(int i=0;i<100;i++) {
 			tblProducto.setValueAt("", i, 0);
 			tblProducto.setValueAt("", i, 1);
 			tblProducto.setValueAt("", i, 2);

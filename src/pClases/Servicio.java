@@ -5,12 +5,12 @@ import java.util.Date;
 
 public class Servicio{
 	
-	int id_S;
-	String encargado;
-	String cliente;
-	String servicio;
-	LocalDate fecha;
-	double costo;
+	public int id_S;
+	public String encargado;
+	public String cliente;
+	public String servicio;
+	public LocalDate fecha;
+	public double costo;
 	
 	
 	

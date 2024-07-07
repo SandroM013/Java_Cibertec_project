@@ -435,7 +435,7 @@ public class Empleados extends JFrame {
 	}
 	
 	private void limpiaTabla() {
-		for(int i=0;i<6;i++) {
+		for(int i=0;i<100;i++) {
 			tblEmpleados.setValueAt("", i, 0);
 			tblEmpleados.setValueAt("", i, 1);
 			tblEmpleados.setValueAt("", i, 2);

@@ -437,7 +437,7 @@ public class Servicios extends JFrame {
 	}
 	
 	void limpiaTabla() {
-		for(int i=0;i<6;i++) {
+		for(int i=0;i<100;i++) {
 			tblServicios.setValueAt("", i, 0);
 			tblServicios.setValueAt("", i, 1);
 			tblServicios.setValueAt("", i, 2);
